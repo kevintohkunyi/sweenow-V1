@@ -6,8 +6,182 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript">
+      function closeMenuFunction(){
+        document.getElementById("overlay").style.display = "none";
+      }
+      function openMenuFunction(){
+        document.getElementById("overlay").style.display = "block";
+      }
+      function openCheckOutFunction(){
+        document.getElementById("home-right").style.display = "block";
+        document.getElementById("body-main").style.overflow = "hidden";  
+      }
+      function closeCheckOutFunction(){
+        document.getElementById("home-right").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function openPopupFunction(){
+        document.getElementById("popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden";  
+      }   
+      function closePopupFunction(){
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function addItemFunction() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+        document.getElementById("no-order").style.display = "none";
+        document.getElementById("receipt-container").style.display = "block";
+        document.getElementById("no-item").style.display = "none";
+        document.getElementById("no-voucher6").style.display = "inline-block";
+      }
+      function openStoreFunction(){
+        document.getElementById("store-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }     
+      function closeStoreFunction(){
+        document.getElementById("store-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function selectStoreFunction(){
+        document.getElementById("store-popup").style.display = "none";
+        window.open("/order","_self");
+      }    
+      function openContinueFunction(){
+        document.getElementById("continue-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden";  
+      }   
+      function closeContinueFunction(){
+        document.getElementById("continue-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+    
+      function openFbFunction(){
+        document.getElementById("continue-fb-popup").style.display = "block";
+        document.getElementById("signup-popup").style.display = "none";
+      }
+      function continueOrderFunction(){
+        document.getElementById("home-right").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function selectAddressFunction(){
+        document.getElementById("address-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeAddressFunction(){
+        document.getElementById("address-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function openAddAddressFunction(){
+        document.getElementById("add-address-popup").style.display = "flex";
+        document.getElementById("address-popup").style.display = "none";
+      }
+      function closeAddAddressFunction(){
+        document.getElementById("add-address-popup").style.display = "none";
+        document.getElementById("address-popup").style.display = "flex";
+      }
+      function enterAddressFunction(){
+        document.getElementById("add-address-popup").style.display = "none";
+        document.getElementById("address-popup").style.display = "flex";
+        document.getElementById("yes-address").style.display = "block";
+        document.getElementById("no-address").style.display = "none";
+      }
+      function confirmAddressFunction(){
+        document.getElementById("address-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+        document.getElementById("select-address").style.display = "none";
+        document.getElementById("d-location").style.display = "block";
+        document.getElementById("noaddr1").style.display = "none";
+        document.getElementById("noaddr2").style.display = "none";
+        document.getElementById("yesaddr1").style.display = "inline-block";
+        document.getElementById("yesaddr2").style.display = "inline-block";
+        document.getElementById("yesaddr3").style.display = "inline-block";
+        document.getElementById("bar-bottom").style.display = "none";
+        document.getElementById("bar-bottom2").style.display = "block";
+      }
+      function openErrorAddrFunction(){
+        document.getElementById("erroraddr").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeErrorAddrFunction(){
+        document.getElementById("erroraddr").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function addVoucherFunction(){
+        document.getElementById("no-voucher").style.display = "none";
+        document.getElementById("yes-voucher").style.display = "block"; 
+      }
+      function openVoucherFunction(){
+        document.getElementById("voucher-popup").style.display = "flex";
+      }
+      function closeVoucherFunction(){
+        document.getElementById("voucher-popup").style.display = "none";
+      }
+      function selectVoucherFunction(){
+        document.getElementById("voucher-popup").style.display = "none";
+        document.getElementById("no-voucher1").style.display = "none";
+        document.getElementById("no-voucher2").style.display = "none";
+        document.getElementById("no-voucher3").style.display = "none";
+        document.getElementById("no-voucher4").style.display = "none";
+        document.getElementById("no-voucher5").style.display = "none";
+        document.getElementById("no-voucher6").style.display = "none";
+        document.getElementById("yes-voucher1").style.display = "inline-block";
+        document.getElementById("yes-voucher2").style.display = "inline-block";
+        document.getElementById("yes-voucher3").style.display = "inline-block";
+        document.getElementById("yes-voucher4").style.display = "inline-block";
+        document.getElementById("yes-voucher5").style.display = "inline-block";
+        document.getElementById("yes-voucher6").style.display = "inline-block";
+        document.getElementById("voucher-discount").style.display = "block";
+        
+      }
+      function openStoreInfoFunction(){
+        document.getElementById("storeinfo").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeStoreInfoFunction(){
+        document.getElementById("storeinfo").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function openAccountFunction(){
+        document.getElementById("account-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeAccountFunction(){
+        document.getElementById("account-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function openEditProfileFunction(){
+        document.getElementById("editprofile-popup").style.display = "flex";
+        document.getElementById("account-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeEditProfileFunction(){
+        document.getElementById("editprofile-popup").style.display = "none";
+        document.getElementById("account-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function logoutFunction(){
+        document.getElementById("account-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      
+
+          
+    </script>
+    <style>
+        html { 
+          scroll-behavior: smooth; 
+        }
+        a:link, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        
+      
+    </style>
   </head>
-  <body>
+  <body id = "body-main">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
