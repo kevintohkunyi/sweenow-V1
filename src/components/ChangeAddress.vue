@@ -73,7 +73,7 @@ export default {
         display: block;
         background: #f1f1f3;
         overflow: hidden;
-        position: relative;
+        position: fixed;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         border-radius: 3px;
         height: 80vh;
