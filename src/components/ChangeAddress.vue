@@ -38,7 +38,7 @@
             </div>
 
             <div id = "address-bottom" onclick="openAddAddressFunction();">
-                    <div id = "address-btn">1Add New Address</div>
+                    <div id = "address-btn">11Add New Address</div>
                 </div>    
             
             
