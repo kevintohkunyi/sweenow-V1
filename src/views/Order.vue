@@ -1,6 +1,5 @@
 <template>
 <div class = "container" id = "home-main-div">
-  <ContinueOrder />
   <ItemPopup />
   <div id = "checkout-bottom-bar">
     <div class = "bar-inner" onclick="openCheckOutFunction();">
@@ -36,13 +35,11 @@ import MerchantInfo from '@/components/MerchantInfo.vue'
 import MenuInfo from '@/components/MenuInfo.vue'
 import MenuCategory from '@/components/MenuCategory.vue'
 import Receipt from '@/components/Receipt.vue'
-import ContinueOrder from '@/components/ContinueOrder.vue'
 import NoOrder from '@/components/NoOrder.vue'
 
 export default {
   name: 'Order',
   components: {
-    ContinueOrder,
     ItemPopup,
     MerchantInfo,
     MenuInfo,

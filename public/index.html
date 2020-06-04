@@ -57,7 +57,6 @@
         document.getElementById("continue-popup").style.display = "none";
         document.getElementById("body-main").style.overflow = "auto"; 
       }
-    
       function openFbFunction(){
         document.getElementById("continue-fb-popup").style.display = "block";
         document.getElementById("signup-popup").style.display = "none";
@@ -164,6 +163,14 @@
       }
       function logoutFunction(){
         document.getElementById("account-popup").style.display = "none";
+        document.getElementById("body-main").style.overflow = "auto"; 
+      }
+      function openMenuRegisterFunction(){
+        document.getElementById("register-popup").style.display = "flex";
+        document.getElementById("body-main").style.overflow = "hidden"; 
+      }
+      function closeMenuRegisterFunction(){
+        document.getElementById("register-popup").style.display = "none";
         document.getElementById("body-main").style.overflow = "auto"; 
       }
       

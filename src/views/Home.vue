@@ -40,7 +40,6 @@ export default {
 
 <style scoped lang="scss">
 
-
 #maindiv {
   padding-top: 60px;
   height: calc(100vh - 60px);

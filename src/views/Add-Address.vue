@@ -461,6 +461,7 @@ export default {
   #body-main {
     background: white;
   }
+  
   #top-nav {
     box-shadow: none;
     border-bottom: 1px solid #dbdbdb;
@@ -484,6 +485,7 @@ export default {
   
 }
 @media only screen and (max-width: 500px) {
+  
   .d-title {
     font-size: 0.85rem;
   }

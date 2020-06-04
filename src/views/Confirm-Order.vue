@@ -527,6 +527,12 @@ export default {
   #bar-bottom {
     font-size: 0.85rem;
   }
+  #select-description {
+    font-size: 0.85rem;
+  }
+  #select-img img {
+    width: 50px;
+  }
 }
 
 

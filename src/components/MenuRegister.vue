@@ -1,11 +1,11 @@
 <template>
-    <div id = "continue-popup">
+    <div id = "register-popup">
         <div class = "continue-container" id = "signup-popup">
            <div id = "continue-back">
-                <img src = "@/assets/left-arrow.png" onclick="closeContinueFunction();">
+                <img src = "@/assets/left-arrow.png" onclick="closeMenuRegisterFunction();">
             </div>
             <div id = "continue-title">Hello there!</div>
-            <div id = "continue-subtitle">Please login or register to continue.</div>
+            <div id = "continue-subtitle">Please login or register.</div>
             <div id = "continue-fb" onclick="openFbFunction();">
                 <img src = "@/assets/facebook.png">
                 Continue with Facebook
@@ -40,7 +40,7 @@
 <script>
 
 export default {
-  name: 'ContinueOrder',
+  name: 'MenuRegister',
   components: {
     
   }
@@ -49,7 +49,7 @@ export default {
 
 <style scoped lang="scss">
 
-    #continue-popup {
+    #register-popup {
         position: fixed;
         display: none;
         align-items: center;

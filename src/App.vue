@@ -33,12 +33,12 @@
           </span>
           Select outlet
         </div>
-        <router-link to = "/register"><div class = "sidemenu-item" id = "menu5">
+        <div class = "sidemenu-item" id = "menu5"  onclick="openContinueFunction();">
           <span class = "sidemenu-icon">
             <img src = "@/assets/user.png">
           </span>
           Sign up / Login
-        </div></router-link>
+        </div>
         <div class = "sidemenu-item" id = "menu6" onclick="openAccountFunction();">
           <span class = "sidemenu-icon">
             <img src = "@/assets/user.png">
@@ -62,6 +62,8 @@
     <StoreInfo />
     <MyAccount />
     <EditProfile />
+    <ContinueOrder />
+    
     
     
     
@@ -76,6 +78,8 @@ import ChangeVoucher from '@/components/ChangeVoucher.vue'
 import StoreInfo from '@/components/StoreInfo.vue'
 import MyAccount from '@/components/MyAccount.vue'
 import EditProfile from '@/components/EditProfile.vue'
+import ContinueOrder from '@/components/ContinueOrder.vue'
+
 
 export default {
   components: {
@@ -83,7 +87,9 @@ export default {
     SelectStore,
     StoreInfo,
     MyAccount,
-    EditProfile
+    EditProfile,
+    ContinueOrder
+    
   }
 }
 </script>

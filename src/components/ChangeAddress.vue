@@ -185,7 +185,12 @@ export default {
         .continue-container {
             margin-left: 15px;
             margin-right: 15px;
+        }
+        #address-container, #address-bottom {
             width: calc(100% - 30px);
+        }
+        #address-title {
+            width: 100%;
         }
         #continue-fb, #continue-email {
             font-size: 0.85rem;
