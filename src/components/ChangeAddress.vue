@@ -38,7 +38,7 @@
             </div>
 
             <div id = "address-bottom" onclick="openAddAddressFunction();">
-                    <div id = "address-btn">11Add New Address</div>
+                    <div id = "address-btn">Add New Address</div>
                 </div>    
             
             
@@ -70,7 +70,7 @@ export default {
         z-index: 99999;
         overflow-y: auto;
         overflow-x: hidden;
-        min-height: 100vh;
+        min-height: 120vh;
         text-align: left;
     }
     #address-container {
@@ -82,6 +82,7 @@ export default {
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         border-radius: 3px;
         height: 70vh;
+        margin-bottom: 20vh;
         
     }
     #address-title {
