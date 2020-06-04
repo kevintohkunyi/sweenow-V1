@@ -1,16 +1,19 @@
 <template>
     <div id = "address-popup">
         <div id = "address-container">
+
            <div id = "address-title">
                 <img src = "@/assets/left-arrow.png" onclick="closeAddressFunction();">
                 Delivery Address
             </div>
+
             <div id = "no-address">
                 <div>
                     <img src = "@/assets/address.png">
                     Please add a new address
                 </div>
             </div>
+
             <div id = "yes-address">
                 <div class = "delivery-address" onclick="confirmAddressFunction();">
                     <div class = "da-name">Kevin Nguyen | 0965123456<span class="da-edit">Edit</span></div>
@@ -33,9 +36,11 @@
                     <div class = "da-address">208 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh, Vietnam</div>
                 </div>
             </div>
+
             <div id = "address-bottom" onclick="openAddAddressFunction();">
-                <div id = "address-btn">Add New Address</div>
-            </div>
+                    <div id = "address-btn">1Add New Address</div>
+                </div>    
+            
             
 
     </div>
@@ -73,10 +78,10 @@ export default {
         display: block;
         background: #f1f1f3;
         overflow: hidden;
-        position: fixed;
+        position: relative;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         border-radius: 3px;
-        height: 80vh;
+        height: 70vh;
         
     }
     #address-title {
@@ -124,8 +129,7 @@ export default {
         height: 400px;
         padding-top: 10px;
         overflow-x: hidden;
-        overflow-y: auto;
-        
+        overflow-y: auto;        
     }
     .delivery-address {
         padding: 20px;
@@ -133,7 +137,7 @@ export default {
         margin-bottom: 10px;
     }
     .delivery-address:last-of-type {
-        margin-bottom: 75px;
+        margin-bottom: 120px;
     }
     .delivery-address:hover {
         cursor: pointer;
@@ -152,14 +156,15 @@ export default {
     #address-bottom {
         height: 70px;
         background: white;
-        bottom: 9vh;
         border-radius: 0 0 3px 3px;
         width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-top: 1px solid #dbdbdb;
-        position: fixed;
+        position: absolute;
+        bottom: 0;
+    
     }
     #address-btn {
         width: calc(100% - 40px);
@@ -186,10 +191,10 @@ export default {
             margin-left: 15px;
             margin-right: 15px;
         }
-        #address-container, #address-bottom {
+        #address-container {
             width: calc(100% - 30px);
         }
-        #address-title {
+        #address-title, #address-bottom {
             width: 100%;
         }
         #continue-fb, #continue-email {
