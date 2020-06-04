@@ -70,7 +70,7 @@ export default {
         z-index: 99999;
         overflow-y: auto;
         overflow-x: hidden;
-        min-height: 120vh;
+        min-height: 100vh;
         text-align: left;
     }
     #address-container {
@@ -82,7 +82,6 @@ export default {
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         border-radius: 3px;
         height: 70vh;
-        margin-bottom: 20vh;
         
     }
     #address-title {
